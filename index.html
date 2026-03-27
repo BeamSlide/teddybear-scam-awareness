@@ -21,16 +21,20 @@
         text-decoration: none;
         cursor: default;
     }
+    /* 🔥 Blinking animation for triangle icons */
+    .blink {
+        animation: blink-animation 1s steps(2, start) infinite;
+    }
+    @keyframes blink-animation {
+        to { visibility: hidden; }
+    }
 </style>
 </head>
-
 <body>
-
 <!-- Header Banner -->
 <div class="banner center">
-    ⚠️ This page will disappear tonight at 11:59 PM ⚠️
+    <span class="blink">⚠️</span> This page will disappear tonight at 11:59 PM <span class="blink">⚠️</span>
 </div>
-
 <div class="container">
 
     <!-- Removed all scripts, kept layout -->
